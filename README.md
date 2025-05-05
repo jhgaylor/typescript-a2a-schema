@@ -1,4 +1,4 @@
-# ts-a2a-schema
+# a2a-schema
 
 This npm package provides TypeScript definitions for the JSON-RPC Agent-to-Agent (A2A) protocol.
 
