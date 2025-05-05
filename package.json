@@ -1,5 +1,5 @@
 {
-  "name": "ts-a2a-protocol",
+  "name": "a2a-schema",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
