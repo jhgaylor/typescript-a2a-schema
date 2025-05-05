@@ -1,0 +1,34 @@
+{
+  "name": "ts-a2a-protocol",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "format": "prettier --write 'src/**/*.ts'",
+    "format:check": "prettier --check 'src/**/*.ts'",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "npm run typecheck",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "description": "TypeScript types for the JSON-RPC A2A protocol",
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  }
+}

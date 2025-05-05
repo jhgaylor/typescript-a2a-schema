@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "esModuleInterop": true, // Often helpful with NodeNext
+    "resolveJsonModule": true, // Good practice for importing JSON if needed
+    "declaration": true, // Generate declaration files
+    "declarationMap": true // Generate declaration maps
+  },
+  "include": ["src/**/*.ts"]
+}
